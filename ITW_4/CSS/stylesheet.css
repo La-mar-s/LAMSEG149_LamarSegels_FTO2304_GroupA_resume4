@@ -78,7 +78,7 @@ section {
 
 .curve::before {
     content: '';
-    diplay: block;
+    display: block;
     position: absolute;
     border-radius: 100% 50%;
     width: 55%;
@@ -89,7 +89,7 @@ section {
 
 .curve::after {
     content: '';
-    diplay: block;
+    display: block;
     position: absolute;
     border-radius: 100% 50%;
     width: 55%;
