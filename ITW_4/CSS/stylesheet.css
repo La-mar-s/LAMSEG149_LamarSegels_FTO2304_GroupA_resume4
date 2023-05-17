@@ -2,6 +2,7 @@
 img {
     height: 500px;
     width: 350px;
+    
 }
 
 h1 {
@@ -20,7 +21,6 @@ h3 {
 }
 
 body {
-    width: 600px;
     background-color: #202731;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #ffffff;
@@ -61,40 +61,72 @@ section {
     background: #0f0f10;
 }
 
-.red {
-    background: #dd3f31;
+.grey {
+    background: #2b2929;
 }
 
-.pink {
-    background: #ff0066;
+.light-blue {
+    background: #398ddb;
 }
 
-.curve {
+.wave {
     position: absolute;
-    height: 225px;
-    width: 100%;
     bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
-.curve::before {
-    content: '';
+.wave svg {
+    position: relative;
     display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%
-    background-color #202731;
-    transform: translate(85%, 60%);
+    width: calc(118% + 1.3px);
+    height: 279px;
 }
 
-.curve::after {
-    content: '';
-    display: block;
+.wave .shape-fill {
+    fill: #3c31dd;
+}
+
+.wave2 {
     position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%
-    background-color #3c31dd;
-    transform: translate(-4%, 40%);
-    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(103% + 1.3px);
+    height: 223px;
+}
+
+.wave2 .shape-fill {
+    fill: #3C31DD;
+}
+
+.wave3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave3 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 107px;
+}
+
+.wave3 .shape-fill {
+    fill: #2B2929;
 }
